@@ -1,0 +1,67 @@
+LOAD XML LOCAL INFILE "E:\\daily.xml"
+INTO TABLE currency
+ROWS IDENTIFIED BY '<plugin>';
+
+
+LOAD XML INFILE "E:\\daily.xml"
+INTO TABLE currency
+ROWS IDENTIFIED BY '<item>';
+
+
+
+LOAD DATA INFILE "E:\\daily.xml"
+INTO TABLE currency
+CHARACTER SET 'utf8'
+LINES STARTING BY '<offers>'
+TERMINATED BY '</offers>'
+(@xml)
+SET
+  Valute ID = ExtractValue(@xml, 'Valute ID'),
+  name = ExtractValue(@xml, 'name'),
+Value = ExtractValue(@xml, 'Value');
+
+
+
+DECLARE @xml XML
+SET @xml = (
+  SELECT * FROM currency (
+    BULK 'E:\\daily.xml', SINGLE_CLOB
+  ) AS xml
+)
+LOAD DATA INFILE "E:\\daily.xml"
+INTO TABLE currency
+CHARACTER SET 'utf8'
+LINES STARTING BY '<offers>'
+TERMINATED BY '</offers>'
+(@xml);
+
+LOAD XML LOCAL INFILE 'E:\\daily.xml' INTO TABLE currency rows identified by '<row>';
+
+LOAD XML LOCAL INFILE 'E:\\daily.xml'
+INTO TABLE currency
+CHARACTER SET cp1251
+ROWS IDENTIFIED BY '<Valute>';
+
+windows-1251
+LOAD XML LOCAL INFILE 'E:\\daily.xml' INTO TABLE currency
+  SET Valute ID = Valute ID, Name = Name, Value = Value;
+
+
+CREATE TABLE currency (
+   ID INT ,
+    name VARCHAR(250) NULL,
+    Value int NULL
+ );
+
+
+delete from currency;
+ALTER TABLE `currency` CONVERT TO CHARACTER SET cp866 COLLATE cp866_general_ci;
+
+ALTER TABLE `currency` CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
+
+ALTER TABLE `currency` CONVERT TO CHARACTER SET cp866 COLLATE cp866_general_ci;
+
+
+ LOAD XML LOCAL INFILE 'E:\\daily.xml' INTO TABLE `currency` ROWS IDENTIFIED BY '<TaskArchive >';
