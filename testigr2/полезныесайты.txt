@@ -1,0 +1,35 @@
+выпадающие списки:
+http://qaru.site/questions/1621111/dependent-dropdown-yii2-how-to-do
+
+
+по зависимым спискам:
+https://stackoverrun.com/ru/q/12000439
+
+по событию шекбокс актвация 
+https://stackoverrun.com/ru/q/12782885
+
+
+загрузка файлов
+https://p0vidl0.info/yii2-api-guides/guide-ru-input-file-upload.html
+
+https://yiico.ru/blog/493-zagruzka-izobrazhenii-i-failov-v-yii2-ih-sohranenie-v-papku-na-servere-i-v-bd
+
+https://webformyself.com/yii2-izobrazheniya/
+
+https://yii2-framework.readthedocs.io/en/latest/guide-ru/input-file-upload/
+
+
+
+кабинет пользователя
+https://кодер.укр/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8/yii2-basic-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8-%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%B1%D0%B4
+
+
+https://code.tutsplus.com/ru/tutorials/how-to-program-with-yii2-integrating-user-registration--cms-22974
+
+
+
+http://abrekhov.ru/blog/yii2-auth/
+
+
+
+https://elisdn.ru/blog/71/seo-service-on-yii2-user-profile сменапароля в профиле

@@ -1,0 +1,96 @@
+body {
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 80%;
+	margin: 0;
+	padding: 0;
+	background-color : #ffffff;
+	
+}
+.tbl1 
+{ 
+background: url('back.jpg'); 
+background-repeat: no-repeat; 
+} 
+
+p,h1,h2,h3,main {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	color: black;
+}
+#navigation {
+border-bottom: 1px dotted #460016; 
+	margin: 3;
+	width: 100%;
+	background-color: #DDDDDD;
+}
+
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 200%;
+
+	font-weight: bold;
+}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 160%;
+
+	font-weight: bold;
+}
+
+
+h3 {
+
+	font-size: 110%;
+
+	
+}
+
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #CC0000;
+
+
+}
+a:hover{
+text-decoration: underline;
+}
+
+
+.naim
+{
+display:none;
+}
+.area
+{
+display:none;
+height:400px;
+}
+
+.blok {
+position:relative;
+width:100%;
+min-height:100px;
+padding:1em;
+margin:2em 10px 4em;
+background:#fff;
+-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.blok:before,
+.blok:after {
+content:"";
+position:absolute;
+z-index:-2;
+}
+
+.blok p {
+font-size:16px;
+font-weight:bold;
+}
